@@ -1,5 +1,7 @@
 # Single-Chart Story (Containerized)
 
+[![Build artifacts](https://github.com/laasya-online/single-chart-story/actions/workflows/build-artifacts.yml/badge.svg)](https://github.com/<your-username>/single-chart-story/actions/workflows/build-artifacts.yml)
+
 Generate a professional **city premium vs US average** chart for a chosen tech role from a synthetic 2024 salary sample, **in one command** via Docker.
 
 ## TL | DR
