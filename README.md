@@ -1,6 +1,7 @@
 # Single-Chart Story (Containerized)
 
 [![Build artifacts](https://github.com/laasya-online/single-chart-story/actions/workflows/build-artifacts.yml/badge.svg)](https://github.com/<your-username>/single-chart-story/actions/workflows/build-artifacts.yml)
+[![Security scan](https://github.com/Laasya-online/single-chart-story/actions/workflows/security.yml/badge.svg)](https://github.com/Laasya-online/single-chart-story/actions/workflows/security.yml)
 
 Generate a professional **city premium vs US average** chart for a chosen tech role from a synthetic 2024 salary sample, **in one command** via Docker.
 
@@ -24,6 +25,14 @@ docker build -t single-chart:0.1.0 .
 mkdir -p out
 docker run --rm -v "$PWD/out:/out" single-chart:0.1.0 --role "Software Engineer"
 # Outputs: out/city_premium_dumbbell.(png|svg) + out/city_premium_summary.csv
+```
 
+## Security posture
+- ✅ No secrets in repo; `.env` and local artifacts are gitignored.
+- ✅ **Dependabot** keeps GitHub Actions and Python dependencies updated (weekly).
+- ✅ **Security scan** runs on every push/PR and weekly:
+  - Vulnerability scan with Trivy (results visible in **Code Scanning Alerts**)
+  - SBOM (SPDX JSON) published as a build artifact
+- 🔜 Roadmap: sign releases, pin base images, add license scanning.
 
 
