@@ -23,7 +23,7 @@ jobs:
 
       # ---- Vulnerability scan (Trivy -> SARIF) ----
       - name: Trivy filesystem scan (SARIF)
-        uses: aquasecurity/trivy-action@0.20.0
+        uses: aquasecurity/trivy-action@0.33.1
         with:
           scan-type: fs
           ignore-unfixed: true
