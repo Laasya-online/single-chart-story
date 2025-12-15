@@ -28,7 +28,7 @@ jobs:
           python app.py --role "Software Engineer" --out out
 
       - name: Upload artifacts (PNG, SVG, CSV)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: single-chart-artifacts
           path: |
